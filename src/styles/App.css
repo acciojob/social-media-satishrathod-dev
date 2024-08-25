@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 1em 2.5em;
+}
+
+/* HEADER */
+
+.header {
+	background-color: #7649bd;
+	color: white;
+	padding: 3em 2.5em 0 2.5em;
+}
+
+.header > section {
+	margin-top: 3em;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.header > section > ul {
+	display: flex;
+	gap: 0.5em;
+	list-style: none;
+}
+
+.header > section > ul > li {
+	cursor: pointer;
+	padding: 0.5em 1.25em 1em;
+	background-color: #48149b;
+	border-radius: 0.3em;
+}
+
+.header > section > ul > li > a {
+	color: white;
+}
+
+.header .button {
+	color: white;
+	padding: 1em 1.25em;
+	background-color: #1775cf;
+}
+
+/* POST FORM */
+
+.post-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+/* POSTS */
+
+.posts >section {
+	margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* POST */
+
+.post{
+    border: 1px solid lightgray;
+    padding: 0.5em;
+	border-radius: 0.3em;
+}
+
+.post .author {
+	font-style: italic;
+	font-size: 0.8rem;
+	margin-bottom: 0.5em;
+}
+
+.post .reactions{
+	margin-top: 0.5em;
+	display: flex;
+	gap:0.5em;
+}
+
+.post .reactions button{
+	border: none;
+	cursor: pointer;
+	padding: 0.25em 0.5em;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25em;
+	border-radius: 0.3em;
+}
+
+.post > a{
+	margin-top: 0.5em;
+	display: inline-block;
+	padding: 0.5em 1.25em;
+	background-color: #1775cf;
+	color: white;
+	border-radius: 0.3em;
+}
+
+.post span{
+	background-color: #b0d5f9;
+}
+
+/* NOTIFICATIONS */
+
+/* .notificationsList{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+} */
+
+/* section.notificationsList > div{
+	border: 2px solid red;
+} */
