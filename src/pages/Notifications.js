@@ -13,19 +13,21 @@ function Notifications() {
   };
 
   return (
-    <section className="notificationsList">
-      <h2>Notifications</h2>
-      <section>
-        <div className="notificationsList">
-          {notifications.map((notification) => (
-            <section className="notificationsList" key={notification.id}>
-              <strong>{getAuthor(notification.authorId).name}</strong>{" "}
-              {notification.message}
-            </section>
-          ))}
-        </div>
+    <div>
+      <section className="notificationsList">
+        <h2>Notifications</h2>
+        <section>
+          <div className="notificationsList">
+            {notifications.map((notification) => (
+              <section className="notificationsList" key={notification.id}>
+                <strong>{getAuthor(notification.authorId).name}</strong>{" "}
+                {notification.message}
+              </section>
+            ))}
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   );
 }
 
