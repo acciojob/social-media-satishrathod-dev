@@ -6,6 +6,8 @@ function Notifications() {
   const { notifications } = useContext(NotificationContext);
   const { users } = useContext(UserContext);
 
+  console.log(notifications);
+
   const getAuthor = (id) => {
     return users.find((user) => user.id == id);
   };
@@ -16,7 +18,7 @@ function Notifications() {
       <section>
         <div className="notificationsList">
           {notifications.map((notification) => (
-            <section key={notification.id}>
+            <section className="notificationsList" key={notification.id}>
               <strong>{getAuthor(notification.authorId).name}</strong>{" "}
               {notification.message}
             </section>
