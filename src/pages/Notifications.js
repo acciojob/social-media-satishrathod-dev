@@ -13,7 +13,7 @@ function Notifications() {
   };
 
   return (
-    <section className="container notifications">
+    <section className="notificationsList">
       <h2>Notifications</h2>
       <section>
         <div className="notificationsList">
